@@ -1,13 +1,12 @@
 (ns london-quadratic.formula
   (:require [london-quadratic.discriminant :refer :all]
-            [schema.core :as s])
-  (:import (java.math MathContext)))
+            [schema.core :as s]))
 
 (s/defn quadratic-formula [a :- BigDecimal
                            b :- BigDecimal
                            c :- BigDecimal]
-  (let [discriminant (discriminant a b c)
-        sqrt-discriminant (.sqrt discriminant (new MathContext 10))
+  (let [discriminant (double (discriminant a b c))
+        sqrt-discriminant (bigdec (Math/sqrt discriminant))
         minus-b (.negate b)
         two-times-a (.multiply a 2M)]
     #{(-> minus-b (- sqrt-discriminant) (/ two-times-a))
