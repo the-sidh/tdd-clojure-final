@@ -1,4 +1,6 @@
 # london-quadratic
 
-Quadratic Formula using london approach of TDD, as seen in the 3rt part of the the series TDD in Clojure, by Sidharta Rezende
+Code for the 4th and final part of the the series TDD in Clojure, by Sidharta Rezende
+
+
 
