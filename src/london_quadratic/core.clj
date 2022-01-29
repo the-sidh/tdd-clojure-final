@@ -1,6 +1,4 @@
 (ns london-quadratic.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn not-zero? [number]
+  (not (= 0M number)))

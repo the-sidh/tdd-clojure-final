@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [prismatic/schema "1.2.0"]
                  [nubank/mockfn "0.6.0"]
-                 [lein-cloverage "1.2.2"]]
+                 [lein-cloverage "1.2.2"]
+                 [org.clojure/test.check "1.1.1"]]
   :repl-options {:init-ns london-quadratic.core}
   :plugins [[lein-cloverage "1.2.2"]])
